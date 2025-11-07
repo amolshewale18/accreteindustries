@@ -1,0 +1,3 @@
+document.getElementById('year').textContent = new Date().getFullYear();
+const navToggle=document.getElementById('navToggle');const nav=document.getElementById('nav');navToggle?.addEventListener('click',()=>{if(!nav)return;nav.style.display=nav.style.display==='flex'?'none':'flex';nav.style.flexDirection='column';nav.style.background='white';nav.style.padding='10px';nav.style.position='absolute';nav.style.right='12px';nav.style.top='64px';nav.style.borderRadius='8px';nav.style.boxShadow='0 8px 20px rgba(43,43,43,0.08)';});
+const form=document.getElementById('contactForm');form?.addEventListener('submit',e=>{e.preventDefault();const d=new FormData(form);alert(`Thank you, ${d.get('name')}! We received your message.`);form.reset();});
